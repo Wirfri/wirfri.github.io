@@ -4,66 +4,137 @@
   <meta charset="UTF-8">
   <title>Wirfri - Educación Financiera</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f2f2f2; color: #333; }
-    header { background: #1e2a38; color: white; padding: 2rem; text-align: center; }
-    h1 { margin: 0; font-size: 2.5rem; }
-    h2 { margin-top: 3rem; }
-    .container { max-width: 960px; margin: auto; padding: 2rem; }
-    .book { background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 2rem; padding: 1.5rem; display: flex; gap: 1rem; align-items: center; }
-    .book img { width: 120px; height: auto; border-radius: 5px; }
-    .book-info { flex: 1; }
-    .book-title { font-size: 1.5rem; margin: 0 0 0.5rem 0; color: #1e2a38; }
-    .buy-button { display: inline-block; margin-top: 0.5rem; background: #0d6efd; color: white; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: bold; }
-    .section-title { color: #1e2a38; border-bottom: 2px solid #0d6efd; padding-bottom: 0.5rem; }
-    footer { text-align: center; font-size: 0.9rem; padding: 2rem 0; color: #777; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 3px solid #2980b9;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .book {
+      background: white;
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    .book img {
+      max-width: 100px;
+      height: auto;
+      margin-right: 1.5rem;
+      border-radius: 5px;
+    }
+
+    .book-info h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    .book-info p {
+      margin: 0.3rem 0 1rem;
+    }
+
+    .book-info a {
+      background-color: #007bff;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .book-info a:hover {
+      background-color: #0056b3;
+    }
+
+    .autor {
+      margin-top: 3rem;
+      border-top: 2px solid #ccc;
+      padding-top: 2rem;
+    }
+
+    .autor h3 {
+      color: #c0392b;
+    }
+
+    .descripcion {
+      font-style: italic;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #555;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Wirfri</h1>
-    <p>Libertad empieza con conocimiento. Educación financiera sencilla, útil y real.</p>
+    <p>Educación financiera para todas las edades</p>
   </header>
-  <div class="container">
-    <h2 class="section-title">📚 Libros publicados</h2>
+
+  <main>
+    <h2>📚 Libros publicados</h2>
 
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/71UgPL8Fb0L._AC_UF1000,1000_QL80_.jpg" alt="Portada Educación financiera para tus hijos">
+      <img src="Educación financiera para tus hijos.jpg" alt="Portada Educación financiera para tus hijos">
       <div class="book-info">
-        <p class="book-title">Educación financiera para tus hijos</p>
+        <h3>Educación financiera para tus hijos</h3>
         <p>Una guía práctica, emocional y flexible para enseñar a tus hijos hábitos, valores y libertad desde casa.</p>
-        <a href="https://www.amazon.es/dp/B0FDKZBWD1" target="_blank" class="buy-button">Ver en Amazon</a>
+        <a href="https://www.amazon.es/dp/B0FDKZBWD1" target="_blank">Ver en Amazon</a>
       </div>
     </div>
 
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/71FXSBv05PL._AC_UF1000,1000_QL80_.jpg" alt="Portada La mejor inversión de tu vida">
+      <img src="La mejor inversión de tu vida.jpg" alt="Portada La mejor inversión de tu vida">
       <div class="book-info">
-        <p class="book-title">La mejor inversión de tu vida</p>
+        <h3>La mejor inversión de tu vida</h3>
         <p>Empieza desde cero y cambia tu futuro financiero paso a paso.</p>
-        <a href="https://www.amazon.es/dp/B0FDKXT1F5" target="_blank" class="buy-button">Ver en Amazon</a>
+        <a href="https://www.amazon.es/dp/B0FDKXT1F5" target="_blank">Ver en Amazon</a>
       </div>
     </div>
 
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/713P4YzGbpL._AC_UF1000,1000_QL80_.jpg" alt="Portada Organiza tu economía">
+      <img src="Organiza tu economía.jpg" alt="Portada Organiza tu economía">
       <div class="book-info">
-        <p class="book-title">Organiza tu economía</p>
+        <h3>Organiza tu economía</h3>
         <p>Gestiona tus finanzas personales de forma clara, sencilla y sin estrés.</p>
-        <a href="https://www.amazon.es/dp/B0FDKXHTLR" target="_blank" class="buy-button">Ver en Amazon</a>
+        <a href="https://www.amazon.es/dp/B0FDKXHTLR" target="_blank">Ver en Amazon</a>
       </div>
     </div>
 
-    <h2 class="section-title">🧠 Sobre el autor</h2>
-    <p>¿Quién es Wirfri? Una persona real, como tú. Un trabajador por cuenta ajena que despertó y decidió que no quería seguir jugando al juego de la vida según le enseñaron. 
-    Descubrió la educación financiera como herramienta de libertad, y ahora quiere ayudarte a despertar también.  
-    WE ARE FREE... WE'RE FREE... WIRFRI.</p>
+    <div class="autor">
+      <h3>🧠 Sobre el autor</h3>
+      <p>¿Quién es Wirfri? Una persona real, como tú. Un trabajador por cuenta ajena que despertó y decidió que no quería seguir jugando al juego de la vida según le enseñaron. Descubrió la educación financiera como herramienta de libertad, y ahora quiere ayudarte a despertar también. <strong>WE ARE FREE... WE'RE FREE... WIRFRI!</strong></p>
+    </div>
 
-    <h2 class="section-title">✨ Sobre esta web</h2>
-    <p>Bienvenido a <strong>Wirfri.es</strong>, un espacio creado para ayudarte a tomar el control de tu economía y tu vida.  
-    Aquí encontrarás libros que te hablan claro, consejos aplicables desde el primer día y recursos para que tú (y tu familia) podáis avanzar hacia una vida más libre y consciente.</p>
-  </div>
-  <footer>
-    &copy; 2025 Wirfri. Todos los derechos reservados.
-  </footer>
+    <div class="descripcion">
+      Esta página es una iniciativa para acercar la educación financiera a todas las edades, con libros diseñados para ayudarte a tomar el control de tu dinero y transformar tu vida desde la base.
+    </div>
+
+  </main>
+
 </body>
 </html>
